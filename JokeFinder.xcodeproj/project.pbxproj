@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		26DA22692D763E3A00D193F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA22632D763E3A00D193F8 /* Preview Assets.xcassets */; };
+		26DA226A2D763E3A00D193F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA22652D763E3A00D193F8 /* Assets.xcassets */; };
+		26DA226C2D763E3A00D193F8 /* JokeFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DA22672D763E3A00D193F8 /* JokeFinderApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		26DA22472D763E0A00D193F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +33,12 @@
 		26DA22362D763E0800D193F8 /* JokeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA22462D763E0A00D193F8 /* JokeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA22502D763E0A00D193F8 /* JokeFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26DA22632D763E3A00D193F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26DA22652D763E3A00D193F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26DA22672D763E3A00D193F8 /* JokeFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFinderApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		26DA22382D763E0800D193F8 /* JokeFinder */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JokeFinder;
-			sourceTree = "<group>";
-		};
 		26DA22492D763E0A00D193F8 /* JokeFinderTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JokeFinderTests;
@@ -43,6 +47,21 @@
 		26DA22532D763E0A00D193F8 /* JokeFinderUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JokeFinderUITests;
+			sourceTree = "<group>";
+		};
+		26DA226D2D763E6F00D193F8 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26DA226E2D763E9300D193F8 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26DA226F2D763E9A00D193F8 /* View Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +94,7 @@
 		26DA222D2D763E0800D193F8 = {
 			isa = PBXGroup;
 			children = (
-				26DA22382D763E0800D193F8 /* JokeFinder */,
+				26DA22682D763E3A00D193F8 /* JokeFinder */,
 				26DA22492D763E0A00D193F8 /* JokeFinderTests */,
 				26DA22532D763E0A00D193F8 /* JokeFinderUITests */,
 				26DA22372D763E0800D193F8 /* Products */,
@@ -90,6 +109,27 @@
 				26DA22502D763E0A00D193F8 /* JokeFinderUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		26DA22642D763E3A00D193F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26DA22632D763E3A00D193F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26DA22682D763E3A00D193F8 /* JokeFinder */ = {
+			isa = PBXGroup;
+			children = (
+				26DA22672D763E3A00D193F8 /* JokeFinderApp.swift */,
+				26DA226F2D763E9A00D193F8 /* View Model */,
+				26DA226E2D763E9300D193F8 /* Model */,
+				26DA226D2D763E6F00D193F8 /* Views */,
+				26DA22642D763E3A00D193F8 /* Preview Content */,
+				26DA22652D763E3A00D193F8 /* Assets.xcassets */,
+			);
+			path = JokeFinder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +148,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				26DA22382D763E0800D193F8 /* JokeFinder */,
+				26DA226D2D763E6F00D193F8 /* Views */,
+				26DA226E2D763E9300D193F8 /* Model */,
+				26DA226F2D763E9A00D193F8 /* View Model */,
 			);
 			name = JokeFinder;
 			packageProductDependencies = (
@@ -212,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DA22692D763E3A00D193F8 /* Preview Assets.xcassets in Resources */,
+				26DA226A2D763E3A00D193F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DA226C2D763E3A00D193F8 /* JokeFinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
